@@ -1,0 +1,96 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Design system for Garside Enterprise - Artistic color palette */
+@layer base {
+  :root {
+    --background: 45 25% 98%;
+    --foreground: 25 15% 15%;
+
+    --card: 45 25% 96%;
+    --card-foreground: 25 15% 15%;
+
+    --popover: 45 25% 98%;
+    --popover-foreground: 25 15% 15%;
+
+    --primary: 25 45% 35%;
+    --primary-foreground: 45 25% 98%;
+
+    --secondary: 35 20% 85%;
+    --secondary-foreground: 25 15% 25%;
+
+    --muted: 35 15% 90%;
+    --muted-foreground: 25 10% 45%;
+
+    --accent: 15 55% 65%;
+    --accent-foreground: 45 25% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 25 45% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom artistic colors */
+    --terracotta: 15 55% 65%;
+    --clay-brown: 25 45% 35%;
+    --sage-green: 85 25% 55%;
+    --cream: 45 25% 95%;
+    --charcoal: 25 15% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .text-terracotta {
+    color: hsl(var(--terracotta));
+  }
+  
+  .bg-terracotta {
+    background-color: hsl(var(--terracotta));
+  }
+  
+  .text-clay-brown {
+    color: hsl(var(--clay-brown));
+  }
+  
+  .bg-clay-brown {
+    background-color: hsl(var(--clay-brown));
+  }
+  
+  .text-sage-green {
+    color: hsl(var(--sage-green));
+  }
+  
+  .bg-sage-green {
+    background-color: hsl(var(--sage-green));
+  }
+  
+  .gradient-artistic {
+    background: linear-gradient(135deg, hsl(var(--terracotta)) 0%, hsl(var(--clay-brown)) 100%);
+  }
+}
