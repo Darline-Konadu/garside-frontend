@@ -34,11 +34,19 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up">
-            <Button size="lg" className="bg-white text-clay-brown hover:bg-white/90 font-semibold px-8 py-3">
-              Explore Products
-             </Button>
+            <Link to="/gallery">
+              <Button
+                size="lg"
+                className="bg-white text-clay-brown hover:bg-white/90 font-semibold px-8 py-3"
+              >
+                Explore Products
+              </Button>
+            </Link>
             <Link to="/process.mp4" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="border-white text-brown hover:bg-white hover:text-clay-brown font-semibold px-8 py-3">
+              <Button
+                size="lg"
+                className="border-white text-brown hover:bg-white hover:text-clay-brown font-semibold px-8 py-3"
+              >
                 Watch Our Process
               </Button>
             </Link>
