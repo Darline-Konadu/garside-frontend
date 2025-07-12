@@ -86,7 +86,35 @@ const products = [
     category: "Tools & Equipment",
     isNew: false,
     isSale: false
+  },
+  {
+  id: 8,
+    name: " Bonsai Wire",
+    price: "$20.00",
+    image: "/bonsaiwire.jpg",
+    category: "Tools & Equipment",
+    isNew: false,
+    isSale: false
+  },
+  {
+    id: 9,
+    name: " Mayco lead- free jungle gems glaze",
+    price: "$50.00",
+    image: "/leadglaze.jpg",
+    category: "Glazes & Finishes",
+    isNew: true,
+    isSale: false
+  },
+  {
+    id: 10,
+    name: "Mayco Speckled stroke and coat glazes",
+    price: "$200.00",
+    image: "/strokeglaze.jpg",
+    category: "Glazes & Finishes",
+    isNew: false,
+    isSale: true
   }
+
 ];
 
 const Gallery = () => {
